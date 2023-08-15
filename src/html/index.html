@@ -4,9 +4,375 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../css/styles.css" />
-    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Social Media Dashboard</title>
   </head>
-  <body>
-    <h1 class="text-3xl text-green-600 text-center">Test</h1>
+  <body class="font-inter text-grayish-blue-dark">
+    <section class="mx-10 mb-20">
+      <div class="container relative mx-auto space-y-16 2xl:w-9/12">
+        <!-- Header -->
+        <div class="flex flex-col md:flex-row justify-between pt-12">
+          <div>
+            <h2
+              class="text-2xl md:text-4xl font-bold text-grayish-blue-very-dark mb-1"
+            >
+              Social Media Dashboard
+            </h2>
+            <p class="font-bold text-grayish-blue-dark text-base md:text-lg">
+              Total Followers: 23,004
+            </p>
+          </div>
+          <hr class="bg-grayish-blue-very-dark my-6 md:hidden" />
+          <div class="flex justify-between md:items-center space-x-3">
+            <p class="font-bold text-base text-[#aeb3cb]">Dark Mode</p>
+            <label
+              for="darkmode"
+              class="bg-[#aeb3cb] w-14 h-7 relative block rounded-full cursor-pointer"
+            >
+              <input type="checkbox" id="darkmode" class="sr-only peer" />
+              <span
+                class="w-2/5 h-4/5 bg-white absolute rounded-full top-[3px] left-[3px] transition-all duration-500 peer-checked:left-[30px]"
+              ></span>
+            </label>
+          </div>
+        </div>
+
+        <!-- Cards Section-->
+        <div class="flex flex-col md:flex-row gap-10">
+          <!-- Card 1 -->
+          <div
+            class="space-y-8 p-8 border-t-5 border-[#198ff5] bg-grayish-blue-light rounded-lg md:w-1/4"
+          >
+            <div class="flex justify-center space-x-2 mt-2">
+              <img
+                class="w-6 h-6"
+                src="../../images/icon-facebook.svg"
+                alt="icon-facebook"
+              />
+              <p class="font-bold">@nathanf</p>
+            </div>
+            <div class="text-center space-y-2">
+              <h1 class="text-6xl font-bold text-grayish-blue-very-dark">
+                1987
+              </h1>
+              <p class="uppercase tracking-[0.3rem]">Followers</p>
+            </div>
+            <div class="flex justify-center items-center space-x-1.5">
+              <img src="../../images/icon-up.svg" alt="icon-up" />
+              <p class="text-lime-green font-bold">12 Today</p>
+            </div>
+          </div>
+          <!-- End of Card 1 -->
+
+          <!-- Card 2 -->
+          <div
+            class="space-y-8 p-8 border-t-5 border-[#1ca0f2] bg-grayish-blue-light rounded-lg md:w-1/4"
+          >
+            <div class="flex justify-center space-x-2 mt-2">
+              <img
+                class="w-6 h-6"
+                src="../../images/icon-twitter.svg"
+                alt="icon-facebook"
+              />
+              <p class="font-bold">@nathanf</p>
+            </div>
+            <div class="text-center space-y-2">
+              <h1 class="text-6xl font-bold text-grayish-blue-very-dark">
+                1044
+              </h1>
+              <p class="uppercase tracking-[0.3rem]">Followers</p>
+            </div>
+            <div class="flex justify-center items-center space-x-1.5">
+              <img src="../../images/icon-up.svg" alt="icon-up" />
+              <p class="text-lime-green font-bold">99 Today</p>
+            </div>
+          </div>
+          <!-- End of Card 2 -->
+
+          <!-- Card 3 -->
+          <div
+            class="md:w-1/4 bg-gradient-to-r from-[#fdc468] to-[#df4996] pt-[5px] rounded-lg overflow-hidden"
+          >
+            <div class="w-full space-y-8 p-8 bg-grayish-blue-light ">
+              <div class="flex justify-center space-x-2 mt-2">
+                <img
+                  class="w-6 h-6"
+                  src="../../images/icon-instagram.svg"
+                  alt="icon-facebook"
+                />
+                <p class="font-bold">@realnathanf</p>
+              </div>
+              <div class="text-center space-y-2">
+                <h1 class="text-6xl font-bold text-grayish-blue-very-dark">
+                  11k
+                </h1>
+                <p class="uppercase tracking-[0.3rem]">Followers</p>
+              </div>
+              <div class="flex justify-center items-center space-x-1.5">
+                <img src="../../images/icon-up.svg" alt="icon-up" />
+                <p class="text-lime-green font-bold">1099 Today</p>
+              </div>
+            </div>
+          </div>
+          <!-- End of Card 3 -->
+
+          <!-- Card 4 -->
+          <div
+            class="space-y-8 p-8 border-t-5 border-[#c4032a] bg-grayish-blue-light rounded-lg md:w-1/4"
+          >
+            <div class="flex justify-center space-x-2 mt-2">
+              <img
+                class="w-6 h-6"
+                src="../../images/icon-youtube.svg"
+                alt="icon-facebook"
+              />
+              <p class="font-bold">Nathan F.</p>
+            </div>
+            <div class="text-center space-y-2">
+              <h1 class="text-6xl font-bold text-grayish-blue-very-dark">
+                8239
+              </h1>
+              <p class="uppercase tracking-[0.3rem]">Subscribers</p>
+            </div>
+            <div class="flex justify-center items-center space-x-1.5">
+              <img src="../../images/icon-down.svg" alt="icon-up" />
+              <p class="text-bright-red font-bold">144 Today</p>
+            </div>
+          </div>
+          <!-- End of Card 4 -->
+        </div>
+
+        <!-- Overview Section -->
+        <div class="space-y-10">
+          <!-- Header -->
+          <h2 class="text-3xl font-bold">Overview - Today</h2>
+
+          <!-- Flex Container 1 -->
+          <div class="flex flex-col md:flex-row gap-10">
+            <!-- Overview Card 1 -->
+            <div
+              class="p-8 space-y-4 rounded-lg bg-grayish-blue-light md:w-1/4"
+            >
+              <div class="flex justify-between">
+                <h3 class="font-bold">Page Views</h3>
+                <img
+                  class="w-6 h-6"
+                  src="../../images/icon-facebook.svg"
+                  alt="icon-facebook"
+                />
+              </div>
+              <div class="flex justify-between items-end">
+                <h1
+                  class="text-4.5xl font-bold relative top-2.5 text-grayish-blue-very-dark"
+                >
+                  87
+                </h1>
+                <div class="flex items-center space-x-1.5">
+                  <img src="../../images/icon-up.svg" alt="up icon" />
+                  <p class="font-bold text-lime-green">3%</p>
+                </div>
+              </div>
+            </div>
+            <!-- End of Overview Card 1 -->
+
+            <!-- Overview Card 2 -->
+            <div
+              class="p-8 space-y-4 rounded-lg bg-grayish-blue-light md:w-1/4"
+            >
+              <div class="flex justify-between">
+                <h3 class="font-bold">Likes</h3>
+                <img
+                  class="w-6 h-6"
+                  src="../../images/icon-facebook.svg"
+                  alt="icon-facebook"
+                />
+              </div>
+              <div class="flex justify-between items-end">
+                <h1
+                  class="text-4.5xl font-bold relative top-2.5 text-grayish-blue-very-dark"
+                >
+                  52
+                </h1>
+                <div class="flex items-center space-x-1.5">
+                  <img src="../../images/icon-down.svg" alt="up icon" />
+                  <p class="font-bold text-bright-red">2%</p>
+                </div>
+              </div>
+            </div>
+            <!-- End of Overview Card 2 -->
+
+            <!-- Overview Card 3 -->
+            <div
+              class="p-8 space-y-4 rounded-lg bg-grayish-blue-light md:w-1/4"
+            >
+              <div class="flex justify-between">
+                <h3 class="font-bold">Likes</h3>
+                <img
+                  class="w-6 h-6"
+                  src="../../images/icon-instagram.svg"
+                  alt="icon-facebook"
+                />
+              </div>
+              <div class="flex justify-between items-end">
+                <h1
+                  class="text-4.5xl font-bold relative top-2.5 text-grayish-blue-very-dark"
+                >
+                  5462
+                </h1>
+                <div class="flex items-center space-x-1.5">
+                  <img src="../../images/icon-up.svg" alt="up icon" />
+                  <p class="font-bold text-lime-green">2257%</p>
+                </div>
+              </div>
+            </div>
+            <!-- End of Overview Card 3 -->
+
+            <!-- Overview Card 4 -->
+            <div
+              class="p-8 space-y-4 rounded-lg bg-grayish-blue-light md:w-1/4"
+            >
+              <div class="flex justify-between">
+                <h3 class="font-bold">Profile Views</h3>
+                <img
+                  class="w-6 h-6"
+                  src="../../images/icon-instagram.svg"
+                  alt="icon-facebook"
+                />
+              </div>
+              <div class="flex justify-between items-end">
+                <h1
+                  class="text-4.5xl font-bold relative top-2.5 text-grayish-blue-very-dark"
+                >
+                  52k
+                </h1>
+                <div class="flex items-center space-x-1.5">
+                  <img src="../../images/icon-up.svg" alt="up icon" />
+                  <p class="font-bold text-lime-green">1375%</p>
+                </div>
+              </div>
+            </div>
+            <!-- End of Overview Card 4 -->
+          </div>
+          <!-- End of Flex Container 1 -->
+
+          <!-- Flex Container 2 -->
+          <div class="flex flex-col md:flex-row gap-10">
+            <!-- Overview Card 5 -->
+            <div
+              class="p-8 space-y-4 rounded-lg bg-grayish-blue-light md:w-1/4"
+            >
+              <div class="flex justify-between">
+                <h3 class="font-bold">Retweets</h3>
+                <img
+                  class="w-6 h-6"
+                  src="../../images/icon-twitter.svg"
+                  alt="icon-facebook"
+                />
+              </div>
+              <div class="flex justify-between items-end">
+                <h1
+                  class="text-4.5xl font-bold relative top-2.5 text-grayish-blue-very-dark"
+                >
+                  117
+                </h1>
+                <div class="flex items-center space-x-1.5">
+                  <img src="../../images/icon-up.svg" alt="up icon" />
+                  <p class="font-bold text-lime-green">303%</p>
+                </div>
+              </div>
+            </div>
+            <!-- End of Overview Card 5 -->
+
+            <!-- Overview Card 6 -->
+            <div
+              class="p-8 space-y-4 rounded-lg bg-grayish-blue-light md:w-1/4"
+            >
+              <div class="flex justify-between">
+                <h3 class="font-bold">Likes</h3>
+                <img
+                  class="w-6 h-6"
+                  src="../../images/icon-twitter.svg"
+                  alt="icon-facebook"
+                />
+              </div>
+              <div class="flex justify-between items-end">
+                <h1
+                  class="text-4.5xl font-bold relative top-2.5 text-grayish-blue-very-dark"
+                >
+                  507
+                </h1>
+                <div class="flex items-center space-x-1.5">
+                  <img src="../../images/icon-up.svg" alt="up icon" />
+                  <p class="font-bold text-lime-green">553%</p>
+                </div>
+              </div>
+            </div>
+            <!-- End of Overview Card 6 -->
+
+            <!-- Overview Card 7 -->
+            <div
+              class="p-8 space-y-4 rounded-lg bg-grayish-blue-light md:w-1/4"
+            >
+              <div class="flex justify-between">
+                <h3 class="font-bold">Likes</h3>
+                <img
+                  class="w-6 h-6"
+                  src="../../images/icon-youtube.svg"
+                  alt="icon-facebook"
+                />
+              </div>
+              <div class="flex justify-between items-end">
+                <h1
+                  class="text-4.5xl font-bold relative top-2.5 text-grayish-blue-very-dark"
+                >
+                  107
+                </h1>
+                <div class="flex items-center space-x-1.5">
+                  <img src="../../images/icon-down.svg" alt="up icon" />
+                  <p class="font-bold text-bright-red">19%</p>
+                </div>
+              </div>
+            </div>
+            <!-- End of Overview Card 7 -->
+
+            <!-- Overview Card 8 -->
+            <div
+              class="p-8 space-y-4 rounded-lg bg-grayish-blue-light md:w-1/4"
+            >
+              <div class="flex justify-between">
+                <h3 class="font-bold">Total Views</h3>
+                <img
+                  class="w-6 h-6"
+                  src="../../images/icon-youtube.svg"
+                  alt="icon-facebook"
+                />
+              </div>
+              <div class="flex justify-between items-end">
+                <h1
+                  class="text-4.5xl font-bold relative top-2.5 text-grayish-blue-very-dark"
+                >
+                  1407
+                </h1>
+                <div class="flex items-center space-x-1.5">
+                  <img src="../../images/icon-down.svg" alt="up icon" />
+                  <p class="font-bold text-bright-red">12%</p>
+                </div>
+              </div>
+            </div>
+            <!-- End of Overview Card 8 -->
+          </div>
+          <!-- End of Flex Container 2 -->
+        </div>
+      </div>
+    </section>
   </body>
 </html>
+
+<!-- <div class="flex space-x-2">
+  
+</div> -->

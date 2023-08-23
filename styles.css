@@ -15,4 +15,10 @@
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+/* @media screen and (max-width: 825px) {
+  .cards-container {
+    flex-wrap: wrap;
+  }
+} */
+
 /* background position fix */

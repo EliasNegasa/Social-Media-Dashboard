@@ -2,23 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-/* body {
-  background-image: url('../../images/Body-Background.png');
-  background-repeat: no-repeat;
-  background-size: contain;
-} */
-
 * {
   transition-duration: 500ms;
   transition-property: color, background-color, border-color,
     text-decoration-color, fill, stroke;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-/* @media screen and (max-width: 825px) {
-  .cards-container {
-    flex-wrap: wrap;
-  }
-} */
-
-/* background position fix */
